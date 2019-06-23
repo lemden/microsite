@@ -1,0 +1,39 @@
+/* menu */
+.main-menu {
+    width: 280px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 10px;
+}
+.main-menu span {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main-menu span.active {
+    font-weight: bold;
+}
+.main-menu span:hover {
+    text-decoration: underline;
+}
+
+/* main content */
+.main-content {
+    width: calc(100% - 300px);
+    padding-left: 300px;
+}
+
+.main-content section {
+    min-height: 100vh;
+    border-top: solid 1px #cecece;
+}
+.main-content section:first-child {
+    border: none;
+}
